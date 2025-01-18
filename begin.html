@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner| Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="img/begin/aa.jpg" alt="Logo" class="w-8 h-8">
+                <div class="text-blue-500 text-lg font-bold">BestBrain</div>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-blue-500 hover:text-green-800">Home</a>
+                <a href="#" class="text-blue-500 hover:text-green-800">About</a>
+                <a href="#" class="text-blue-500 hover:text-green-800">Services</a>
+                <a href="#" class="text-blue-500 hover:text-green-800">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                    <img src="img/menu.png" alt="Menu Icon" class="w-6 h-6">
+                </button>
+            </div>
+        </div>
+        <div id="menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-blue-500 hover:text-green-800 px-2 py-1">Home</a>
+            <a href="#" class="block text-blue-500 hover:text-green-800 px-2 py-1">About</a>
+            <a href="#" class="block text-blue-500 hover:text-green-800 px-2 py-1">Services</a>
+            <a href="#" class="block text-blue-500 hover:text-green-800 px-2 py-1">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="bg-green-800 text-white flex flex-col items-center justify-center p-4 mt-4" style="background-image: url('img/begin/back.jpg'); background-size: cover; background-position: center; height: auto;">
+        <h1 class="text-3xl font-bold text-center">
+            <span class="text-yellow-400"> Coloring Page Categories: </span>
+        </h1>
+        <a href="#" class="text-white hover:underline mt-2">Browse Coloring Page Categories</a>
+        <div class="mt-2 p-2 bg-green-600 text-black shadow-lg rounded hidden w-full" id="submenu">
+            <a href="begin.html" class="block px-4 py-2 hover:bg-gray-200 text-3xl text-yellow-800 font-bold">Beginner</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200 text-3xl text-yellow-800 font-bold">Intermediate</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200 text-3xl text-yellow-800 font-bold">Advance</a>
+        </div>
+    </div>
+       
+    <nav class="flex mt-1">
+        <ol class="flex flex-wrap text-xs">
+            <li class="inline-flex items-center">
+                <a href="index.html" class="inline-flex items-center font-medium text-gray-700 hover:text-gray-900">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                    <a href="begin.html"
+                        class="flex font-medium text-gray-700 hover:text-gray-900">Beginner
+                    </a>
+                </div>
+            </li>
+           
+        </ol>
+    </nav>
+
+    <div class="container mx-auto mt-4">
+        <h2 class="uppercase font-bold text-3xl text-green-800">Beginner</h2>
+    </div>
+
+    <div class="container mx-auto p-4 mt-12">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-auto " src="img/begin/apple.png" alt="Image 1">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold mb-2"><a href="#" class="text-blue-500 hover:underline" onclick="toggleModal()">Apple Image</a></h2>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-auto " src="img/begin/dog.png" alt="Image 1">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold mb-2"><a href="#" class="text-blue-500 hover:underline" onclick="toggleModal1()">Dog-Paw Image</a></h2>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-auto " src="img/begin/dragon.png" alt="Image 1">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold mb-2"><a href="#" class="text-blue-500 hover:underline" onclick="toggleModal2()">Dragon Image</a></h2>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <!-- Button to open the modal -->
+
+
+<!-- Modal -->
+<div
+id="modal"
+class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+>
+<div class="bg-white rounded-lg overflow-hidden shadow-lg w-1/3">
+  <!-- Modal Header -->
+  <div class="p-4 border-b border-gray-200">
+    <h2 class="text-xl font-semibold">Apple Image</h2>
+  </div>
+  <!-- Modal Body -->
+  <div class="p-4">
+    <img
+      src="img/begin/apple.png"
+      alt="Sample Image"
+      class="w-full h-auto rounded"
+    />
+    <p class="mt-4 text-gray-600">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum quia voluptates, aliquam quae perspiciatis ratione, nam odio iusto omnis voluptatem hic blanditiis delectus corporis culpa veniam unde consequuntur nesciunt?
+    </p>
+  </div>
+  <!-- Modal Footer -->
+  <div class="p-4 border-t border-gray-200 flex justify-end">
+    <button
+      class="bg-gray-500 text-white font-bold py-2 px-4 rounded mr-2"
+      onclick="toggleModal()"
+    >
+      Close
+    </button>
+    
+<button
+    class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+    onclick="printImage()"
+>
+    Print
+</button>
+
+<script>
+function printImage() {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+        <html>
+            <head>
+                <title>Print Image</title>
+                <style>
+                    body { text-align: center; margin: 0; padding: 0; }
+                    img { max-width: 100%; height: auto; }
+                </style>
+            </head>
+            <body>
+                <img src="img/begin/apple.png" alt="Apple Image">
+                <script>
+                    window.onload = function() {
+                        window.print();
+                        window.onafterprint = function() {
+                            window.close();
+                        };
+                    };
+                <\/script>
+            </body>
+        </html>
+    `);
+    printWindow.document.close();
+}
+</script>
+  </div>
+</div>
+</div>
+
+<script>
+function toggleModal() {
+  const modal = document.getElementById('modal');
+  modal.classList.toggle('hidden');
+}
+</script>
+
+
+<div
+id="modal1"
+class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+>
+<div class="bg-white rounded-lg overflow-hidden shadow-lg w-1/3">
+  <!-- Modal Header -->
+  <div class="p-4 border-b border-gray-200">
+    <h2 class="text-xl font-semibold">Dog-Paw Image</h2>
+  </div>
+  <!-- Modal Body -->
+  <div class="p-4">
+    <img
+      src="img/begin/dog.png"
+      alt="Sample Image"
+      class="w-full h-auto rounded"
+    />
+    <p class="mt-4 text-gray-600">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum quia voluptates, aliquam quae perspiciatis ratione, nam odio iusto omnis voluptatem hic blanditiis delectus corporis culpa veniam unde consequuntur nesciunt?
+    </p>
+  </div>
+  <!-- Modal Footer -->
+  <div class="p-4 border-t border-gray-200 flex justify-end">
+    <button
+      class="bg-gray-500 text-white font-bold py-2 px-4 rounded mr-2"
+      onclick="toggleModal1()"
+    >
+      Close
+    </button>
+    
+<button
+    class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+    onclick="printImage1()"
+>
+    Print
+</button>
+
+<script>
+function printImage1() {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+        <html>
+            <head>
+                <title>Print Image</title>
+                <style>
+                    body { text-align: center; margin: 0; padding: 0; }
+                    img { max-width: 100%; height: auto; }
+                </style>
+            </head>
+            <body>
+                <img src="img/begin/dog.png" alt="Dog-Paw Image">
+                <script>
+                    window.onload = function() {
+                        window.print();
+                        window.onafterprint = function() {
+                            window.close();
+                        };
+                    };
+                <\/script>
+            </body>
+        </html>
+    `);
+    printWindow.document.close();
+}
+</script>
+  </div>
+</div>
+</div>
+
+<script>
+function toggleModal1() {
+  const modal = document.getElementById('modal1');
+  modal.classList.toggle('hidden');
+}
+</script>
+
+
+<div
+id="modal2"
+class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+>
+<div class="bg-white rounded-lg overflow-hidden shadow-lg w-1/3">
+  <!-- Modal Header -->
+  <div class="p-4 border-b border-gray-200">
+    <h2 class="text-xl font-semibold">Dragon Image</h2>
+  </div>
+  <!-- Modal Body -->
+  <div class="p-4">
+    <img
+      src="img/begin/dragon.png"
+      alt="Sample Image"
+      class="w-full h-auto rounded"
+    />
+    <p class="mt-4 text-gray-600">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum quia voluptates, aliquam quae perspiciatis ratione, nam odio iusto omnis voluptatem hic blanditiis delectus corporis culpa veniam unde consequuntur nesciunt?
+    </p>
+  </div>
+  <!-- Modal Footer -->
+  <div class="p-4 border-t border-gray-200 flex justify-end">
+    <button
+      class="bg-gray-500 text-white font-bold py-2 px-4 rounded mr-2"
+      onclick="toggleModal2()"
+    >
+      Close
+    </button>
+    
+<button
+    class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+    onclick="printImage2()"
+>
+    Print
+</button>
+
+<script>
+function printImage2() {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+        <html>
+            <head>
+                <title>Print Image</title>
+                <style>
+                    body { text-align: center; margin: 0; padding: 0; }
+                    img { max-width: 100%; height: auto; }
+                </style>
+            </head>
+            <body>
+                <img src="img/begin/dragon.png" alt="Dragon Image">
+                <script>
+                    window.onload = function() {
+                        window.print();
+                        window.onafterprint = function() {
+                            window.close();
+                        };
+                    };
+                <\/script>
+            </body>
+        </html>
+    `);
+    printWindow.document.close();
+}
+</script>
+  </div>
+</div>
+</div>
+
+<script>
+function toggleModal2() {
+  const modal = document.getElementById('modal2');
+  modal.classList.toggle('hidden');
+}
+</script>
+
+
+
+    <footer class="flex flex-col space-y-10 justify-center m-10 bg-green-800 text-white">
+
+        <nav class="flex justify-center flex-wrap gap-6 font-medium">
+            <a class="hover:text-gray-300" href="#">Home</a>
+            <a class="hover:text-gray-300" href="#">About</a>
+            <a class="hover:text-gray-300" href="#">Services</a>
+            <a class="hover:text-gray-300" href="#">Media</a>
+            <a class="hover:text-gray-300" href="#">Gallery</a>
+            <a class="hover:text-gray-300" href="#">Contact</a>
+        </nav>
+
+        <div class="flex justify-center space-x-5">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/col.png" />
+            </a>
+            
+        </div>
+        <p class="text-center font-medium">&copy; <span id="year"></span> Powered By Best Brain and Thriva Foundation</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+
+
+
+    <script>
+        const submenu = document.getElementById('submenu');
+        const browseLink = submenu.previousElementSibling;
+
+        browseLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            submenu.classList.toggle('hidden');
+        });
+    </script>
+    </div>
+
+    <script>
+
+        module.exports = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        custom: ['Roboto', 'tahoma'],
+                    },
+                },
+            },
+        }
+
+
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
